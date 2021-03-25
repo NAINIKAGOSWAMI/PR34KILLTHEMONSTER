@@ -46,6 +46,8 @@ function setup() {
     box20 = new Box(750,100,50,50);
 
     ball = new Ball(200,200,80,80);
+    fly = new Fly(ball.body,{x:500,y:50})
+    monster = new Monster(1000,300,20,20)
 
 	Engine.run(engine);
   
@@ -80,10 +82,16 @@ Engine.update(engine);
     box19.display();
     box20.display();
   
+    fly.display();
     ball.display();
     ground.display();
+    monster.display();
  
  
+}
+
+function mouseDragged(){
+  Matter.Body.setPosition(ball.body,{x:mouseX,y:mouseY});
 }
 
 
