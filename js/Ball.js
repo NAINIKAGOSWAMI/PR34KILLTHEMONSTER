@@ -18,6 +18,7 @@ class Ball {
         push();
         translate(position.x,position.y);
         rotate(angle);
+        image(this.image,0,-30,this.r+200,this.r)
         // ellipse(0,0,this.width,this.height);
         pop();
 
