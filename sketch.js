@@ -21,6 +21,7 @@ function setup() {
 
 	//Create the Bodies Here.
 	ground = new Ground(600,450,2000,20);
+ // monster = new Monster(1100,550,300);
 
 	  box1 = new Box(900,100,50,50);
     box2 = new Box(900,100,50,50);
@@ -47,7 +48,8 @@ function setup() {
 
     ball = new Ball(200,200,80,80);
     fly = new Fly(ball.body,{x:500,y:50})
-    monster = new Monster(1000,300,20,20)
+    monster = new Monster(1000,100,200,20)//increase the width 
+   
 
 	Engine.run(engine);
   

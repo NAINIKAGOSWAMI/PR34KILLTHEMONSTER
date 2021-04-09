@@ -14,7 +14,7 @@ class Fly{
         if(this.rope.bodyA){
         var pointA= this.rope.bodyA.position
         var pointB = this.pointB
-        line(pointB.x,pointB.y,pointA.x,pointA.y);
+        // line(pointB.x,pointB.y,pointA.x,pointA.y);
         }
 
 

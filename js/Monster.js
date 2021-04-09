@@ -13,12 +13,14 @@ class Monster {
         World.add(world,this.body)
     }
     display(){
-        var angle = this.body.angle;
+        //var angle = this.body.angle;
         var position = this.body.position;
         push();
-        translate(position.x,position.y);
-        rotate(angle);
-        image(this.image,0,-30,this.r+200,this.r)
+        translate(position.x,position.y-100);
+        //rotate(angle);
+        rectMode(CENTER)
+			fill(255,0,255)
+        image(this.image,0,0,this.r,this.r)
         // ellipse(0,0,this.width,this.height);
         pop();
 
